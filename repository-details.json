@@ -1,0 +1,14 @@
+{
+  "repository": "GrimmReaper0/Downstream-Radar",
+  "description": "Catch package release regressions in real downstream consumers with baseline-versus-candidate tests and clear compatibility reports.",
+  "homepage": "https://github.com/GrimmReaper0/Downstream-Radar#readme",
+  "topics": [
+    "reverse-dependencies",
+    "release-engineering",
+    "compatibility-testing",
+    "regression-testing",
+    "ci",
+    "developer-tools",
+    "python"
+  ]
+}

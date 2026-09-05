@@ -1,9 +1,11 @@
 version = 1
+
 [[projects]]
-name = "modern"
+name = "modern-numeric-consumer"
 path = "consumers/modern"
-test = ["{python}", "test_consumer.py", "{package}"]
+test = ["{python}", "test_consumer.py"]
+
 [[projects]]
-name = "legacy"
+name = "legacy-string-consumer"
 path = "consumers/legacy"
-test = ["{python}", "test_consumer.py", "{package}"]
+test = ["{python}", "test_consumer.py"]

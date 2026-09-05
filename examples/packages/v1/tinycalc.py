@@ -1,2 +1,3 @@
-def add(a,b): return a+b
-def legacy_add(a,b): return a+b
+def add(a, b):
+    """The baseline accepts numeric strings."""
+    return int(a) + int(b)

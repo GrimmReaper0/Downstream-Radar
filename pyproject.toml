@@ -1,20 +1,37 @@
 [build-system]
-requires=["setuptools>=77"]
-build-backend="setuptools.build_meta"
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name="downstream-radar"
-version="0.1.0"
-description="Test release candidates against downstream consumer projects and catch compatibility regressions."
-readme="README.md"
-requires-python=">=3.11"
-license={text="MIT"}
-authors=[{name="GrimmReaper0"}]
-dependencies=[]
+name = "downstream-radar"
+version = "0.1.0"
+description = "Catch package release regressions in real downstream consumers with baseline-versus-candidate tests and clear compatibility reports."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "GrimmReaper0"}]
+keywords = ["reverse-dependencies", "release-engineering", "compatibility-testing", "regression-testing", "ci", "developer-tools", "python"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.13",
+  "Operating System :: POSIX",
+]
+dependencies = []
+
 [project.scripts]
-downstream-radar="downstream_radar.cli:entrypoint"
+downstream-radar = "downstream_radar.cli:entrypoint"
+
 [project.urls]
-Homepage="https://github.com/GrimmReaper0/Downstream-Radar"
-Repository="https://github.com/GrimmReaper0/Downstream-Radar"
+Homepage = "https://github.com/GrimmReaper0/Downstream-Radar"
+Repository = "https://github.com/GrimmReaper0/Downstream-Radar"
+Issues = "https://github.com/GrimmReaper0/Downstream-Radar/issues"
+Documentation = "https://github.com/GrimmReaper0/Downstream-Radar/blob/main/docs/guide.md"
+
 [tool.setuptools.packages.find]
-include=["downstream_radar*"]
-exclude=["tests*"]
+include = ["downstream_radar*"]
+exclude = ["tests*"]
