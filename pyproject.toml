@@ -1,0 +1,20 @@
+[build-system]
+requires=["setuptools>=77"]
+build-backend="setuptools.build_meta"
+[project]
+name="downstream-radar"
+version="0.1.0"
+description="Test release candidates against downstream consumer projects and catch compatibility regressions."
+readme="README.md"
+requires-python=">=3.11"
+license={text="MIT"}
+authors=[{name="GrimmReaper0"}]
+dependencies=[]
+[project.scripts]
+downstream-radar="downstream_radar.cli:entrypoint"
+[project.urls]
+Homepage="https://github.com/GrimmReaper0/Downstream-Radar"
+Repository="https://github.com/GrimmReaper0/Downstream-Radar"
+[tool.setuptools.packages.find]
+include=["downstream_radar*"]
+exclude=["tests*"]

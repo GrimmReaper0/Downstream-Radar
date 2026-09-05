@@ -1,0 +1,9 @@
+version = 1
+[[projects]]
+name = "modern"
+path = "consumers/modern"
+test = ["{python}", "test_consumer.py", "{package}"]
+[[projects]]
+name = "legacy"
+path = "consumers/legacy"
+test = ["{python}", "test_consumer.py", "{package}"]
